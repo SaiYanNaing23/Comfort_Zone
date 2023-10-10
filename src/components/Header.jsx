@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 
 
 
+
 const Header = () => {
     const [relatedMovie,setRelatedMovie] = useState([])
     useEffect(()=>{
@@ -26,8 +27,8 @@ const Header = () => {
            }}>
                 {
                     relatedMovie.map(movie=>(
-                        <SplideSlide className='h-screen w-full relative'>
-                            <HeaderCard movie={movie} key={movie.id} />
+                        <SplideSlide className='h-screen w-full relative' key={movie.id}>
+                            <HeaderCard movie={movie} />
                         </SplideSlide>
                     ))
                 }

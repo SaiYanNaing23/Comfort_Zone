@@ -21,6 +21,7 @@ body{
     line-height: 1.5;
     letter-spacing: .1rem;
     word-spacing: .2rem;
+    background: #252525;
 }
 
 .dark-ov{
@@ -30,4 +31,16 @@ body{
 
 .text-box{
     @apply absolute left-10 top-1/2 z-20 w-1/3 text-white
+}
+
+.play-ic {
+    @apply text-red-500 w-20 h-20 z-20 absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+  }
+.card-container:hover .play-ic{
+    display: block;
+    cursor: pointer;
 }
